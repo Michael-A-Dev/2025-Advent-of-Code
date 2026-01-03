@@ -7,9 +7,10 @@ namespace Advent_of_Code
         static void Main(string[] args)
         {
             var day1 = new Day1();
+            var day2 = new Day2();
 
-            day1.RunPart1();
-            day1.RunPart2();
+            day1.Run();
+            day2.Run();
         }
     }
 }

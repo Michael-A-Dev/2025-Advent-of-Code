@@ -2,17 +2,18 @@
 {
     public class Day1
     {
-        public void RunPart1()
+        public void Run()
+        {
+            string[] contents = File.ReadAllLines(@"..\\..\\..\\Inputs\\Day 1.txt");
+
+            RunPart1(contents);
+            RunPart2(contents);
+        }
+
+        public void RunPart1(string[] contents)
         {
             try
             {
-                string[] contents = File.ReadAllLines(@"..\\..\\..\\Inputs\\Day 1.txt");
-                //Console.WriteLine("File contents:");
-                //foreach (string line in contents)
-                //{
-                //    Console.WriteLine(line);
-                //}
-
                 int CIRCULAR_VALUE = 100; //The # of values of the dial.
                 int STARTING_VALUE = 50; //The # the dial begins pointing at.
 
@@ -64,17 +65,10 @@
             }
         }
 
-        public void RunPart2()
+        public void RunPart2(string[] contents)
         {
             try
             {
-                string[] contents = File.ReadAllLines(@"..\\..\\..\\Inputs\\Day 1.txt");
-                //Console.WriteLine("File contents:");
-                //foreach (string line in contents)
-                //{
-                //    Console.WriteLine(line);
-                //}
-
                 int CIRCULAR_VALUE = 100; //The # of values of the dial.
                 int STARTING_VALUE = 50; //The # the dial begins pointing at.
 
